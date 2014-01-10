@@ -9,9 +9,9 @@ One of the best parts of working at [TokBox](http://www.tokbox.com) was getting 
 Here are my three favorites:    
 
 ###[Double Robotics](http://www.doublerobotics.com)
-[![double]({{ site.url }}/assets/doublebad.png)](http://www.doublerobotics.com)
+[![double]({{ site.url }}/assets/doublebad.jpg)](http://www.doublerobotics.com)
 <br>
-<sub>The Double and I are the same height.</sub>
+<sub>Double and I are the same height.</sub>
 
 **Features:** I've heard people call Double "that iPad on a stick". *Well*. It's an iPad on a stick - with integrated video chat (that would be TokBox), a companion web/iOS driver app with intuitive controls, a downward-facing camera (in addition to the iPad's front and back) for navigating tricky terrain, a height adjuster if you need more stature, a slick base which is stable when stationary and smooth when in action. 
  
