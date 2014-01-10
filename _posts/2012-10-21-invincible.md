@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Invincible
-tags: blog
+category: blog
 ---
 Last week, I was making my way back to my hotel in San Francisco, when some one jumped me and tried to grab my bag.   I struggled (and screamed, a lot) for a minute and then the person got off me and ran away.  My glasses had gotten flung off and bent during the scuffle, but otherwise I was and am 100% ok.  
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customer Service
-tags: blog
+category: blog
 ---
 
 There were two posts on Hacker News this week about customer service. Both caught my eye because it’s been pretty top of mind for me:

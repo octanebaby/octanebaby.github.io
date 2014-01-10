@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Physicists At Work
-tags: blog
+category: blog
 ---
 
 Ziggy's lab moving the cryostat which houses the telescopes they're building to deploy from Antartica later this year:

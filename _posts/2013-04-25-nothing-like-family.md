@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Nothing Like Family To Keep It Real
-tags: blog
+category: blog
 ---
 **Jackie:** Hey, your intern wrote a really nice blog about you before he left your company.
 

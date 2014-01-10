@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Living The Dream
-tags: blog
+category: blog
 ---
 
 ![pizza]({{ site.url }}/assets/pizza.jpg)

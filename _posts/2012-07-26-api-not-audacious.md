@@ -1,7 +1,7 @@
 ---
 layout: post
 title: APIs And A Not Audacious Proposal
-tags: blog
+category: blog
 ---
 Last week I gave a talk at [TigerLabs](http://www.tigerlabs.co/) on what I’ve learned about business development and APIs.  Most of the attendees were using more than one API as integral components of their apps.   A handful were contemplating opening up their own.  In response to my asking what people thought an open API was *for*, some one said something to the effect of: “It’s a lazy way to do more business”.  
 

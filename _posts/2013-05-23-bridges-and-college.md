@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bridges and College
-tags: blog
+category: blog
 ---
 
 One upside of the pocket-painful decision to keep a car in New York is that I get to see the bridges up close.  Recently I've seen a lot of the Verrazano-Narrows.  

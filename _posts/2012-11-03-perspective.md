@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Perspective
-tags: blog
+category: blog
 ---
 
 It’s been quite a month: 

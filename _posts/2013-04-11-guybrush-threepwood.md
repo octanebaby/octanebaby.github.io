@@ -1,7 +1,7 @@
 ---
 layout: post
 title: I Am Guybrush Threepwood, Mighty Pirate
-tags: blog
+category: blog
 ---
 
 ![guybrush]({{ site.url }}/assets/guybrush.gif)

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Fitter Happier
-tags: blog
+category: blog
 ---
 
 ####“Happier, healthier, more productive.” That was the goal of mobile app [Astrid](http://www.astrid.com/), and now Yahoo is taking up the mission as it’s just [acquired](https://twitter.com/YahooInc/status/329721496530456576) the social productivity platform.

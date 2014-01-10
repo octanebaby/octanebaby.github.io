@@ -1,7 +1,7 @@
 ---
 layout: post
 title: To The Five Boroughs
-tags: blog
+category: blog
 ---
 Lots of people have asked me why I moved back to New York and how I’m finding working in tech here.  The second question is usually a lead-in to the [NYC vs Silicon Valley](http://www.nytimes.com/2012/05/28/technology/for-tech-startups-new-york-has-increasing-allure.html?pagewanted=all) debate, which is so tired at this point that I’ll fast forward to the conclusion: the Bay Area is where tech is at.  Startups are thriving in NYC, but tech isn’t the primary sector that keeps the city thrumming.  
 

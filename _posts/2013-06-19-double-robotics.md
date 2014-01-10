@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Can Some One Turn Me On?
-tags: blog
+category: blog
 ---
 *First published on the [TokBox blog](http://www.tokbox.com/blog/can-some-one-turn-me-on/).* 
 

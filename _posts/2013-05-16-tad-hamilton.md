@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Just Ask Nicely
-tags: blog
+category: blog
 ---
 Pivotal scene in the seminal 2004 film *[Win A Date With Tad Hamilton!](http://www.imdb.com/title/tt0335559/)*
 

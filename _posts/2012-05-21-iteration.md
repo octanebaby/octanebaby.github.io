@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Iteration
-tags: blog
+category: blog
 ---
 
 It’s my second TC Disrupt in NYC, and this time it was the Song and Janine show.  This time last year Jonathan and I did this show together, and remembering how that went underscores the leaps and bounds by which Jon’s iterated and improved on how he does his thing over the past 12 months.  (No, he didn’t suck then.  He’s just even better now.)

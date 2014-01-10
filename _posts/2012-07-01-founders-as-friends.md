@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Founders As Friends
-tags: blog
+category: blog
 ---
 Harish got married this weekend.   Every wedding is special, but this one was especially special because I’ve loved Harish ever since he enthusiastically ate burnt food I served him the first time we met. Having gotten to know his lady I can’t imagine a better match.  
 

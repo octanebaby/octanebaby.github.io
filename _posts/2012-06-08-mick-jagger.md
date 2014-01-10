@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Mick Jagger's Letter
-tags: blog
+category: blog
 ---
 The is not a new meme, but [customer service and Mick Jagger]({{ site.url }}2012/06/03/customer-service.html) reminded me of this:
 
