@@ -9,9 +9,9 @@ One of the best parts of working at [TokBox](http://www.tokbox.com) was getting 
 Here are my three favorites:    
 
 ###[Double Robotics](http://www.doublerobotics.com)
-[![double]({{ site.url }}/assets/sheldon.png)](http://www.doublerobotics.com)
+[![double]({{ site.url }}/assets/doublecoffee.png)](http://www.doublebad.com)
 <br>
-<sub>Double vs SheldonBot</sub>
+<sub>The Double and I are the same height.</sub>
 
 **Features:** I've heard people call Double "that iPad on a stick". *Well*. It's an iPad on a stick - with integrated video chat (that would be TokBox), a companion web/iOS driver app with intuitive controls, a downward-facing camera (in addition to the iPad's front and back) for navigating tricky terrain, a height adjuster if you need more stature, a slick base which is stable when stationary and smooth when in action. 
  
@@ -23,8 +23,7 @@ Need to get hold of some one? Turn on Double and go look for him. Double broke m
 
 **You may be concerned about:** One problem I had as a remote user was limitations on managing the Double on the other side, i.e. it had to be physically plugged in by some one to charge, and then physically unplugged to get back in the game. Good news -- Double Robotics just announced the release of a [charging dock](http://blog.doublerobotics.com/double-charging-dock-accessory-now-available-for-pre-order)! The folks at TokBox have pre-ordered them already. 
 
-Perpetual references to Big Bang Theory (see image above) -- unavoidable.
-
+Perpetual references to [Big Bang Theory](http://www.pinterest.com/pin/275423333434078111/) -- unavoidable.
 
 One last thing:  Pay pay no heed to the moment in the recent Colbert Report feature on Double when Stephen Colbert summons coffee via Double and hilarity ensues (3:27):
 
