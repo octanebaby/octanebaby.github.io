@@ -70,7 +70,7 @@ While excellent for small meetings of the more light-hearted nature, Romo may no
 **Price**: $149, iPhone not included. 
 
 ###Summary
-This list isn't ordered by preference; I developed great affection for all our robots and picking a favorite would be like choosing between children. Each robot is good at different things, so if you're on the market for a telepresence solution, think about the specific remote-working problems you're facing, your physical space and how cute it needs to be to get your team to use it.   
+This list isn't ordered by preference; I developed great affection for all our robots and picking a favorite would be like choosing between children. Each robot is good at different things, so if you're on the market for a telepresence solution, think about the specific remote working problems you're facing, your physical space and how cute it needs to be to get your team to use it.   
 
-Happy Telepresencing!  
+Happy telepresencing!  
 
