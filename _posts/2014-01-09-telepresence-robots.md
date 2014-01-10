@@ -9,7 +9,7 @@ One of the best parts of working at [TokBox](http://www.tokbox.com) was getting 
 Here are my three favorites:    
 
 ###[Double Robotics](http://www.doublerobotics.com)
-[![double]({{ site.url }}/assets/doublecoffee.png)](http://www.doublebad.com)
+[![double]({{ site.url }}/assets/doublebad.png)](http://www.doublerobotics.com)
 <br>
 <sub>The Double and I are the same height.</sub>
 
