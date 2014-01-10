@@ -1,0 +1,25 @@
+---
+layout: layout
+---
+
+<section class="content">
+  <h1>
+    <a href="{{ page.url }}">{{ page.title }}</a>
+  </h1>
+
+  <section class="byline">
+    {{ page.date | date: "%B %e, %Y" }}
+  </section>
+
+  {{ content }}
+  <!-- TODO: bio here -->
+ 
+  <section class="share">
+    <br>		
+    <p class="byline">Share this post  
+    <!--<a href="https://github.com/{{ site.github }}" target="_blank"><i class="icon icon-github"></i></a>-->
+    <a href="http://www.facebook.com/sharer.php?t={{ page.title }}&u={{ page.url }}" target="_blank"><i class="icon icon-facebook"></i></a>
+    <a href="https://twitter.com/share?text={{ page.title }}&url={{ page.url }}" target="_blank"><i class="icon icon-twitter"></i></a>
+    <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ page.url }}&title={{ page.title }}" target="_blank"><i class="icon icon-linkedin" color="black"></i></a></p>
+  </section>	
+</section>

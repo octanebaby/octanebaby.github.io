@@ -1,0 +1,11 @@
+markdown: rdiscount
+pygments: true
+permalink: /posts/:title
+rdiscount:
+  extensions: [smart]
+
+name: Hello!
+url: http://localhost:4000
+description: Happy!
+twitter: janineyoong
+github: octanebaby
