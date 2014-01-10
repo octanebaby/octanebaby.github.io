@@ -17,7 +17,7 @@ Here are my three favorites:
  
 Need to get hold of some one? Turn on Double and go look for him. Double broke my mental model of needing to call some one or dial-in to something to have a face-to-face conversation, which about-faced my feelings about remote working forever. I've written more extensively about how we used our Double (we named it *J9000*) [here](http://www.tokbox.com/blog/can-some-one-turn-me-on/).  TokBox has since bought another one for the engineering team in Spain: *R-Dos-D-Dos* (*D-Dos*, for short.  I got to name our Doubles).
  
-**Best used for:** Most things you would normally do in-person: sneaking up on co-workers, crashing meetings no one invited you to, hanging out.
+**Best for:** Most things you would normally do in-person: sneaking up on co-workers, crashing meetings no one invited you to, hanging out.
 
 **You'll be surprised by:** Double isn't a traditional collaboration app, so it doesn't have document- or screen-sharing.  What's surprisingly effective is driving the Double to a good vantage point and simply turning toward the thing (presentation/whiteboard/screen) like you would in person.  That way you not only can consume the content but can see John nodding off in the corner too. 
 
@@ -42,7 +42,7 @@ The first-ever Double we tested did indeed keel over a lot, but the most recent 
 
 At TokBox, we used one Kubi for our weekly all-hands and another Kubi as an "always-on" video chat station in our NYC office. Song's version of the Kubi app integrated TokBox video chat and arrow-key control over the movement.              
       
-**Best used for:** Group meetings and small spaces.  Our Double was great for roaming around our wide open office space in San Francisco; our Kubi was a perfect desktop companion in our tiny co-working space in New York City.  
+**Best for:** Group meetings and small spaces.  Our Double was great for roaming around our wide open office space in San Francisco; our Kubi was a perfect desktop companion in our tiny co-working space in New York City.  
 
 **You'll be surprised by:** The Revolve Robotics team has thrown in some thoughtful human touches. Hit the "B" key to see Kubi do this adorable, quick little bow. Pick your favorite color for the power button.  The best Easter Egg is "trooper"  mode which may not see the light of production, but you should ask about it when you buy your Kubi. 
 
