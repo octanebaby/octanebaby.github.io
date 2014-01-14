@@ -12,7 +12,7 @@ Now *that* is tall cool glass of water.
  
 ![billy]({{ site.url }}/assets/billy.png)
 
-When I think about how bridges delight me, I think about [David Billington](http://www.princeton.edu/cee/people/display_person/?netid=billingt), who teaches* *CEE 262: Structures and the Urban Environment* at Princeton. This class (in my time) was widely known as a gut -- but I got much more out of it than a check mark on the engineering coursework requirement.  Every week took us through the story behind a bridge or a tower.  Every week I came away in awe of the achievements of great engineers.  Till this day, whenever I see a bridge I recognize, I see Professor Billington standing next to its picture that he'd flip to on his microfiche projector. 
+When I think about how bridges delight me, I think about [David Billington](http://www.princeton.edu/cee/people/display_person/?netid=billingt), who teaches *CEE 262: Structures and the Urban Environment* at Princeton. This class (in my time) was widely known as a gut -- but I got much more out of it than a check mark on the engineering coursework requirement.  Every week took us through the story behind a bridge or a tower.  Every week I came away in awe of the achievements of great engineers.  Till this day, whenever I see a bridge I recognize, I see Professor Billington standing next to its picture that he'd flip to on his microfiche projector. 
 
 I've been speaking to more and more people recently mulling over whether or not they should go to or finish college. (A few years ago, the question was about grad school -- times they are a changin'. Next year it'll be about [high school](http://www.nytimes.com/2013/05/21/technology/david-karp-quit-school-to-get-serious-about-start-ups.html?pagewanted=all&_r=0).).  My visceral reaction is: but college is so much fun!  And not just in the sense of new friends and freedoms, but in the simple premise that it's four years to learn new stuff. 
 
@@ -28,7 +28,7 @@ College was right for me, but it doesn't mean it's right for everyone. I've met 
 
 I'm glad I went.
 
-**Update: Professor Billington delivered his [final lecture](http://www.princeton.edu/cee/news/archive/?id=1027) earlier this month!*  
+**Update:** Professor Billington delivered his [final lecture](http://www.princeton.edu/cee/news/archive/?id=1027) earlier this month!
 
 ![billington]({{ site.url }}/assets/billington.jpg)
 

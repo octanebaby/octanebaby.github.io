@@ -5,7 +5,8 @@ category: blog
 ---
 
 ![pizza]({{ site.url }}/assets/pizza.jpg)
-*Pizza Moto's margherita pie*
+<br>
+<sub>Pizza Moto's margherita pie</sub>
 
 ##"It's like living the dream, you know?" 
 -- A vendor at [Smorgasburg](http://www.smorgasburg.com/) to his very long line of customers

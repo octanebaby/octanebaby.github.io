@@ -5,7 +5,7 @@ category: blog
 ---
 Pivotal scene in the seminal 2004 film *[Win A Date With Tad Hamilton!](http://www.imdb.com/title/tt0335559/)*
 
-<iframe width="560" height="315" src="http://www.youtube.com/embed/wAmVnaUSRrc" frameborder="0" allowfullscreen> </iframe>
+<iframe width="560" height="315" src="http://www.youtube.com/embed/t-sOtT9426E" frameborder="0" allowfullscreen> </iframe>
 
 
 You don't need to watch the whole movie to see what's happening here (but you know you want to!).  Pete's in love with Rosie.  Angelica, his friendly neighborhood bartender, makes him go get her.
