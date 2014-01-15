@@ -11,7 +11,7 @@ Then last summer I [moved to NYC]({{ site.url }}2012/08/28/to-the-five.html). I 
 
 ![bad]({{ site.url }}/assets/doublebad.jpg)
 <br>
-<sub>J9000 and I are the same height</sub>
+<sub style="font-family:Avenir Next; color:#777;">J9000 and I are the same height</sub>
 
 We got better at this, but the turning point was when [Double Robotics](http://www.doublerobotics.com/) loaned us a Double to beta test (Disclosure! TokBox [powers the video component](http://tokbox.com/customer-stories#doublerobotics) for Double). We affectionately named it J9000.
 
@@ -19,7 +19,7 @@ At first, J9000 was more of a gimmick than anything else. I had trouble driving 
 
 ![joke]({{ site.url }}/assets/doublejoke.png)
 <br>
-<sub>This was not that funny</sub>
+<sub style="font-family:Avenir Next; color:#777;">This was not that funny</sub>
 
 But over time, things improved on all fronts. Iterations on the iPad interface made her easier to drive. The newer, more stable body made it virtually impossible for her to keel over (I crash tested her by running her into the wall repeatedly.  [Some people](https://twitter.com/aoberoi) enjoyed this a little too much). The reliability and quality of the video chat increased dramatically on [WebRTC](http://www.tokbox.com/blog/opentok-on-webrtc-offering-the-technology-of-tomorrow-today/).
 
@@ -27,13 +27,13 @@ Most of all, people started to take her seriously. The first time I had an inkli
 
 ![melih]({{ site.url }}/assets/doublemelih.jpg)
 <br>
-<sub>Can you spot the Double?</sub>
+<sub style="font-family:Avenir Next; color:#777;">Can you spot the Double?</sub>
 
 And that was pretty much what it would have been like in person. No pre-meeting fiddling to make sure I was on, or slowing down in case I wasn't following along with the presentation, or post-meeting recapping of anything I missed.
 
 ![mad]({{ site.url }}/assets/doublemad.png)
 <br>
-<sub>Badri in Madras, Ian in SF, me in NYC (in SF via J9000) -— from Badri’s computer</sub>
+<sub style="font-family:Avenir Next; color:#777;">Badri in Madras, Ian in SF, me in NYC (in SF via J9000) -— from Badri’s computer</sub>
 
 When [Lauren](www.linkedin.com/in/laurenbslattery) and I put together case studies with partners using OpenTok, we try really hard to get the Holy Grail of success stories -- measurable data. With our Double, I'm stumped. What's the ROI of being there? I've worked at TokBox for long enough to know that Important Stuff doesn't always happen in meetings that get scheduled. It's those meetings that you don't need to be at but just want to sit in on. Or those meetings that aren't planned at all but happen when people are working really late and start saying what they really mean. Sometimes it's not meetings at all -- it's what people's faces look like at lunch.
 
@@ -42,7 +42,7 @@ I don't know what that adds up to, but I do know that as our little team becomes
 
 ![coffee]({{ site.url }}/assets/doublecoffee.png)
 <br>
-<sub>Coffee</sub>
+<sub style="font-family:Avenir Next; color:#777;">Coffee</sub>
 
 Like the rest of the TokBox family, she's not perfect but I think she's pretty awesome.
 

@@ -11,7 +11,7 @@ Here are my three favorites:
 ###[Double Robotics](http://www.doublerobotics.com)
 [![double]({{ site.url }}/assets/doublebad.jpg)](http://www.doublerobotics.com)
 <br>
-<sub>Double and I are the same height.</sub>
+<sub style="font-family:Avenir Next; color:#777;">Double and I are the same height.</sub>
 
 **Features:** I've heard people call Double "that iPad on a stick". *Well*. It's an iPad on a stick - with integrated video chat (that would be TokBox), a companion web/iOS driver app with intuitive controls, a downward-facing camera (in addition to the iPad's front and back) for navigating tricky terrain, a height adjuster if you need more stature, a slick base which is stable when stationary and smooth when in action. 
  
@@ -36,7 +36,7 @@ The first-ever Double we tested did indeed keel over a lot, but the most recent 
 ###[Kubi by Revolve Robotics](http://www.revolverobotics.com)
 [![kubi]({{ site.url }}/assets/kubi.png)](http://www.revolverobotics.com)
 <br>
-<sub>Russell beams into the <a href="http://www.octopart.com" target="_blank">Octopart</a> holiday party</sub>
+<sub style="font-family:Avenir Next; color:#777;">Russell beams into the <a href="http://www.octopart.com" target="_blank">Octopart</a> holiday party</sub>
 
 **Features:** Kubi means "neck" in Japanese, which makes sense: it's a vertical mount for an iPad which pans 300 degrees around, and tilts up and down. The remote application works on any web or mobile browser and has nifty features like saving frequently used tilt/pan positions or seating positions around a conference table.  Kubi does not have integrated video chat, which allows people to use any video conferencing service they normally use at work.  Even better, Kubi's API allows developers to build their own Kubi apps -- which, of course, is precisely what [Song](https://github.com/songz/OpenTokKubi) did.     
 
@@ -53,7 +53,7 @@ At TokBox, we used one Kubi for our weekly all-hands and another Kubi as an "alw
 ###[Romotive](http://www.romotive.com)
 [![romo]({{ site.url }}/assets/romo.jpg)](http://www.romotive.com)
 <br>
-<sub>You know, for kids!</subs>
+<sub style="font-family:Avenir Next; color:#777;">You know, for kids!</subs>
 
 One of these things is not like the others: Romo's got facial recognition, motion detection, behaviour customization -- but telepresence isn't even a core feature! It only works on iPhone 4S and up!  It's barely bigger than the palm of your hand! Its website has pictures of kids all over it! It's a toy!   
 

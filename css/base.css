@@ -212,3 +212,6 @@ a {
     margin-right: 0px;  }
     .content .share a:hover {
       color: #227ce8; }
+  .content sub {
+    font-family: Avenir Next;
+    color:#777  } 
