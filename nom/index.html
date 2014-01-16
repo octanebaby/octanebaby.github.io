@@ -10,7 +10,7 @@ title: "Nom"
       <span>{{ post.date | date: "%B %e, %Y" }}</span> 
       <a href="{{ post.url }}">{{ post.title }}</a>
       <p class="share">
-     <a href="http://www.facebook.com/sharer.php?t={{ post.title }}&u={{ site.url }}{{ post.url }}" target="_blank"><i class="icon icon-facebook"></i></a>
+     <a href="http://www.facebook.com/sharer.php?s=100&p[title]={{ post.title }}&p[url]={{ site.url }}{{ post.url }}&p[images][0]={{ site.url }}{{ post.image }}" target="_blank"><i class="icon icon-facebook"></i></a>
      <a href="https://twitter.com/share?text={{ post.title }}&url={{ site.url }}{{ post.url }}" target="_blank"><i class="icon icon-twitter"></i></a>
      <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ post.url }}&title={{ post.title }}" target="_blank"><i class="icon icon-linkedin" color="black"></i></a>
      <a href="mailto:?subject={{ post.title }}&body={{ site.url }}{{ post.url }}" target="_blank"><i class="icon icon-envelope" color="black"></i></a>
