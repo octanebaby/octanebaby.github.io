@@ -20,14 +20,10 @@
   {% if page.image %}
       <meta property="og:image" content="{{ site.url }}{{ page.image }}" />
   {% else %}
-      <meta content="{{ site.url }}/assets/profilepic.jpg" property="og:image">
+      <meta content="{{ site.url }}/assets/profilepic-sq.png" property="og:image">
   {% endif %}
   <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-  {% if page.description %}
-     <meta property="og:description" content="{{ page.description }}" />      
-  {% else %}
-     <meta property="og:description" content="" />
-  {% endif %}
+  <meta property="og:description" content="{{ page.description }}" />      
   <!-- for Twitter -->          
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="{{ page.title }}" />
