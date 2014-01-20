@@ -21,7 +21,7 @@
   <meta content="{{ site.url }}{{ page.url }}" property="og:url">
 {% endif %}
 {% if page.date %}
-  <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
+  <meta content="{{ page.description }}" property="og:description">
   <meta content="{{ site.url }}/about/" property="article:author">
 {% endif %}
   <meta content="{{ site.url }}{{ page.image }}" property="og:image">
