@@ -2,6 +2,7 @@
 layout: post
 title: Hamentashen
 category: nom
+image: /assets/hamentashen.png
 ---
 
 ![hamentashen]({{ site.url }}/assets/hamentashen.png)

@@ -2,6 +2,7 @@
 layout: post
 title: Cranberry Rugelach
 category: nom
+image: /assets/cranberryrugelach.png
 ---
 
 ![cranberry rugelach]({{ site.url }}/assets/cranberryrugelach.png)

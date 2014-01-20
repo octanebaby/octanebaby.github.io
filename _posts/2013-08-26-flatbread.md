@@ -2,6 +2,7 @@
 layout: post
 title: Flatbread
 category: nom
+image: /assets/flatbread.png
 ---
 
 ![flatbread]({{ site.url }}/assets/flatbread.png)
