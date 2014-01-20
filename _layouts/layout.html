@@ -9,29 +9,24 @@
     {% endif %}
     {{ site.name }}
   </title>
+  
+  <!-- for Google -->
+  <meta name="description" content="{{ page.description }}" />
+  <meta name="author" content="Janine Yoong" />
+  
+  <!-- for Facebook -->          
+  <meta property="og:title" content="{{ page.title }}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="{{ site.url }}{{ page.image }}" />
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+  <meta property="og:description" content="{{ page.description }}" />
 
-  <meta content="{{ site.title }}" property="og:site_name">
-{% if page.title %}
-  <meta content="{{ page.title }}" property="og:title">
-{% else %}
-  <meta content="{{ site.title }}" property="og:title">
-{% endif %}
-  <meta content="article" property="og:type">
-  <meta content="{{ site.url }}{{ page.url }}" property="og:url">
-  <meta content="{{ page.description }}" property="og:description">
-  <meta content="{{ site.url }}/about/" property="article:author">
-  <meta content="{{ site.url }}{{ page.image }}" property="og:image">
-{% if page.categories %}
-  {% for category in page.categories limit:1 %}
-  <meta content="{{ category }}" property="article:section">
-  {% endfor %}
-{% endif %}
-{% if page.tags %}
-  {% for tag in page.tags %}
-  <meta content="{{ tag }}" property="article:tag">
-  {% endfor %}
-{% endif %}  	
-  <meta property="fb:admins" content="100001652277439" 
+  <!-- for Twitter -->          
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="{{ page.title }}" />
+  <meta name="twitter:description" content="{{ page.description }}" />
+  <meta name="twitter:image" content="{{ site.url }}{{ page.image }}" />
+
 
   <link rel="alternate" type="application/rss+xml" href="/atom.xml" />
   <link rel="stylesheet" href="/css/fontawesome.min.css" type="text/css" media="screen, projection" />
