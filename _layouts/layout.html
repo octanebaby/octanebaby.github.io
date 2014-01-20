@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-<html prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<html prefix="og: http://ogp.me/ns#">
 <head>
   <meta charset="utf-8">
   <title>
@@ -17,13 +17,9 @@
   <meta content="{{ site.title }}" property="og:title">
 {% endif %}
   <meta content="article" property="og:type">
-{% if page.url %}
   <meta content="{{ site.url }}{{ page.url }}" property="og:url">
-{% endif %}
-{% if page.date %}
   <meta content="{{ page.description }}" property="og:description">
   <meta content="{{ site.url }}/about/" property="article:author">
-{% endif %}
   <meta content="{{ site.url }}{{ page.image }}" property="og:image">
 {% if page.categories %}
   {% for category in page.categories limit:1 %}
