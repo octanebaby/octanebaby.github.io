@@ -20,7 +20,7 @@ What's *really* humbling is knowing that being great in this sense is not hard c
 
 Ouch. It took me years to get from that walking disaster to warbling about h.264 vs. vp8, which ones which tech giants were pushing and for what nefarious ulterior motives, standards committees, why Flash is a giant turd that people keep polishing, the deux ex machina that is WebRTC and so on.
 
-Some engineers are quick to dismiss sales/marketing types who don't know what they're talking about.  Some put up with them.  Some take the time (years) to educate them so they don't say (or promise) ridiculous things.  
+Some engineers are quick to dismiss sales/marketing types who don't know what they're talking about.  Some put up with them.  Some take the time to educate them so they don't say (or promise) ridiculous things.  
 
 Jonathan sent me this [video](http://www.cnet.com/news/this-is-how-an-engineer-feels-when-hes-surrounded-by-idiots/) the other day, a clever satire of how business guys ruin everything.  Look at Stuffed Shirt completely disregard what the engineer is saying!  Look at Tight Hairbun spit out buzzwords like a nasty food-replacement smoothie! Just like real life, but funnier! Ha, ha! 
 
