@@ -10,7 +10,7 @@ image: /assets/doublebad.jpg
 
 My friend -
 
-It's been six months since I left. During this time more people have asked me whether *you* are available to hire than whether *I* am available for hire.  To salve my bruised ego, I'm writing to tell you (a) how great I am, (b) what I tell all of them: that you are the best engineer I've worked with (and fat chance).
+It's been six months since I left. During this time more people have asked me whether *you* are available to hire than whether *I* am available for hire.  To salve my bruised ego, I'm writing to tell you (a) how great I am, and (b) what I tell all of them: that you are the best engineer I've worked with (and fat chance).
  
 On to the first thing. Scott Friend asked me the other day what I want to do with myself and what I think I'm good at. I met up with him a day after baking a batch of raspberry rugelach, and all I could think of was: I bake amazing rugelach.  (It's the sour cream dough, instead of cream cheese.)  Scott, sensing my difficulty, helpfully volunteered that he thinks I'm good at distilling complex technical products down to brass tacks for non-technical audiences, without oversimplifying or overselling. 
 
