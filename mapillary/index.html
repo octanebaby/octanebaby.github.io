@@ -1,7 +1,7 @@
 <html>
     <head>
         <meta charset='utf-8' />
-        <title>Ed's Excellent Adventure!</title>
+        <title>Galciano, Italy</title>
         <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
         <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.12.4/mapbox-gl.js'></script>
         <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.12.4/mapbox-gl.css' rel='stylesheet' />
@@ -36,7 +36,7 @@
         </style>
     </head>
     <body>
-        <h1>Ed's Excellent Adventure!</h1>
+        <h1>Galciana, Italy!</h1>
         <div class="mly-wrapper">
             <div id='mly'></div>
             <div id='map'></div>
@@ -47,8 +47,8 @@
          var map = new mapboxgl.Map({
              container: 'map', // container id
              style: 'mapbox://styles/mapbox/streets-v8', //stylesheet location
-             center: [-67.56850333333334, -68.124265], // starting position ,
-             zoom: 5 // starting zoom
+             center: [43.888, 11.0569], // starting position ,
+             zoom: 10 // starting zoom
          })
              var markerSource = {
                  type: 'geojson',
@@ -56,10 +56,10 @@
                      type: 'Feature',
                      geometry: {
                          type: 'Point',
-                         coordinates: [-67.56850333333334, -68.124265]
+                         coordinates: [43.888, 11.0569]
                      },
                      properties: {
-                         title: 'Ed was here!',
+                         title: 'You are here!',
                          'marker-symbol': 'marker'
                      }
                  }
