@@ -1,11 +1,11 @@
 <html>
-    <head>
-        <meta charset='utf-8' />
-        <title>Demo</title>
+   <head>
+        <meta charset=utf-8 />
+        <title>Esri Leaflet Quickstart</title>
         <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-        <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.12.4/mapbox-gl.js'></script>
-        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.12.4/mapbox-gl.css' rel='stylesheet' />
+        <title>mapillary-js + Esri Leaflet.js example</title>
         <link rel="stylesheet" href="https://npmcdn.com/mapillary-js@1.0.1/dist/mapillary-js.min.css">
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v1.0.0-beta.2/leaflet.css" />
         <style>
          body {
              width: 960px;
@@ -29,108 +29,64 @@
              right: 0;
              bottom: 0;
              z-index: 100;
-	 }  	  
-         h1   {
-	     font-family: "Avenir";	
-	 }
+         }
         </style>
     </head>
     <body>
-        <h1>Demo</h1>
         <div class="mly-wrapper">
-            <div id='mly'></div>
-            <div id='map'></div>
+            <div id="mly"></div>
+            <div id="map"></div>
         </div>
-        <script src="https://npmcdn.com/mapillary-js@1.0.1/dist/mapillary-js.min.js"></script>
+        <script src="//cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+        <script src="//cdn.jsdelivr.net/leaflet.esri/1.0.0/esri-leaflet.js"></script>
+        <script src="//npmcdn.com/mapillary-js@1.0.1/dist/mapillary-js.min.js"></script>
+        <script src="//spatialserver.github.io/Leaflet.MapboxVectorTile/dist/Leaflet.MapboxVectorTile.js"></script>
         <script>
-         mapboxgl.accessToken = 'pk.eyJ1IjoibWFwaWxsYXJ5IiwiYSI6ImNpanB0NmN1bDAwOTF2dG03enM3ZHRocDcifQ.Z6wgtnyRBO0TuY3Ak1tVLQ';
-         var map = new mapboxgl.Map({
-             container: 'map', // container id
-             style: 'mapbox://styles/mapbox/streets-v8', //stylesheet location
-             center: [-73.737, 41.277], // starting position ,
-             zoom: 5 // starting zoom
-         })
-             var markerSource = {
-                 type: 'geojson',
-                 data: {
-                     type: 'Feature',
-                     geometry: {
-                         type: 'Point',
-                         coordinates: [-73.737, 41.277]
-                     },
-                     properties: {
-                         title: 'You are here!',
-                         'marker-symbol': 'marker'
-                     }
+         var map = L.map('map').setView([-73.737, 41.277], 10)
+             L.esri.basemapLayer("Topographic").addTo(map)
+
+
+             var mlyVectorLayerConfig = {
+                 url: 'https://d2munx5tg0hw47.cloudfront.net/tiles/{z}/{x}/{y}.mapbox',
+                 maxZoom: 18,
+                 style: function (feature) {
+                     var style = {}
+                     style.color = 'rgba(0, 255, 0, 0.7)'
+                     style.size = 3
+
+                     return style
                  }
              }
-         var mapillarySource = {
-             type: 'vector',
-             tiles: ['https://d2munx5tg0hw47.cloudfront.net/tiles/{z}/{x}/{y}.mapbox'],
-             minzoom: 0,
-             maxzoom: 16
-         }
-         map.on('style.load', function () {
-             map.addSource('markers', markerSource)
-                 map.addLayer({
-                     id: 'markers',
-                     type: 'symbol',
-                     source: 'markers',
-                     layout: {
-                         'icon-image': '{marker-symbol}-15',
-                         'text-field': '{title}',
-                         'text-font': ['Open Sans Semibold', 'Arial Unicode MS Bold'],
-                         'text-offset': [0, 0.6],
-                         'text-anchor': 'top'
-                     },
-                     paint: {
-                         'text-size': 12
-                     }
-                 })
-                 map.addSource('mapillary', mapillarySource)
-                 map.addLayer({
-                     'id': 'mapillary',
-                     'type': 'line',
-                     'source': 'mapillary',
-                     'source-layer': 'mapillary-sequences',
-                     'layout': {
-                         'line-cap': 'round',
-                         'line-join': 'round'
-                     },
-                     'paint': {
-                         'line-opacity': 0.6,
-                         'line-color':   'rgb(53, 175, 109)',
-                         'line-width':   2
-                     }
-                 }, 'markers')
-         })
-         // THIS IS WHERE THE MAPILLARY PART STARTS!
+
+         var mvtSource = new L.TileLayer.MVTSource(mlyVectorLayerConfig)
+             map.addLayer(mvtSource)
+
+             var marker
+
+         var latLon = [-73.737, 41.277]
+         map.setView(latLon, 16)
+             marker = L.marker({
+                 lat: latLon[0],
+                 lon: latLon[1],
+                 zIndex: 1000
+             })
+             marker.addTo(map)
+
              var mly = new Mapillary
          .Viewer('mly',
                  'cjJ1SUtVOEMtdy11b21JM0tyYTZIQTo2ZmVjNTQ3YWQ0OWI2Yjgx',  // Replace this with your own ClientID
                  '6RU1eOMyUy9XDRJ_87esEA')
+
              mly.on('nodechanged', function (node) {
-                 var lnglat = [node.latLon.lon, node.latLon.lat]
-                 var tempSource = new mapboxgl.GeoJSONSource({
-                     data: {
-                         type: 'Feature',
-                         geometry: {
-                             type: 'Point',
-                             coordinates: lnglat
-                         },
-                         properties: {
-                             title: '',
-                             'marker-symbol': 'marker'
-                         }
+                 var latLon = [node.latLon.lat, node.latLon.lon]
+                 map.setView(latLon, 16)
+
+                     if (!marker) {
+                         marker = L.marker(node.latLon).addTo(map)
+                     } else {
+                         marker.setLatLng(node.latLon)
                      }
-                 })
-                 map.getSource('markers').setData(tempSource._data)
-                 map.flyTo({center: lnglat, zoom: 15})
              })
-             
-             map.on('click', function(e) {
-                 mly.moveCloseTo(e.lngLat.lat, e.lngLat.lng);
-             });
         </script>
     </body>
 </html>
