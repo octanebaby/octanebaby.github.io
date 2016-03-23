@@ -1,7 +1,7 @@
 <html>
     <head>
         <meta charset='utf-8' />
-        <title>Galciana, Italy</title>
+        <title>Demo</title>
         <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
         <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.12.4/mapbox-gl.js'></script>
         <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.12.4/mapbox-gl.css' rel='stylesheet' />
@@ -36,7 +36,7 @@
         </style>
     </head>
     <body>
-        <h1>Galciana, Italy!</h1>
+        <h1>Demo</h1>
         <div class="mly-wrapper">
             <div id='mly'></div>
             <div id='map'></div>
@@ -47,7 +47,7 @@
          var map = new mapboxgl.Map({
              container: 'map', // container id
              style: 'mapbox://styles/mapbox/streets-v8', //stylesheet location
-             center: [11.0574, 43.888], // starting position ,
+             center: [-73.737, 41.277], // starting position ,
              zoom: 5 // starting zoom
          })
              var markerSource = {
@@ -56,7 +56,7 @@
                      type: 'Feature',
                      geometry: {
                          type: 'Point',
-                         coordinates: [11.0574, 43.888]
+                         coordinates: [-73.737, 41.277]
                      },
                      properties: {
                          title: 'You are here!',
@@ -108,7 +108,7 @@
              var mly = new Mapillary
          .Viewer('mly',
                  'cjJ1SUtVOEMtdy11b21JM0tyYTZIQTo2ZmVjNTQ3YWQ0OWI2Yjgx',  // Replace this with your own ClientID
-                 'o54LKa2rwJC7S1Qjkoz93w')
+                 '6RU1eOMyUy9XDRJ_87esEA')
              mly.on('nodechanged', function (node) {
                  var lnglat = [node.latLon.lon, node.latLon.lat]
                  var tempSource = new mapboxgl.GeoJSONSource({
