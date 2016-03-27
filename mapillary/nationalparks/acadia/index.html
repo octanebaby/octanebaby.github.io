@@ -1,15 +1,15 @@
 <html>
    <head>
         <meta charset=utf-8 />
-        <title>Esri Leaflet Quickstart</title>
+        <title>National Parks</title>
         <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-        <title>mapillary-js + Esri Leaflet.js example</title>
+        <title>National Parks</title>
         <link rel="stylesheet" href="https://npmcdn.com/mapillary-js@1.0.1/dist/mapillary-js.min.css">
         <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v1.0.0-beta.2/leaflet.css" />
         <style>
          body {
-             width: 960px;
-             height: 500px;
+             width: 100%;
+             height: 100%;
          }
          .mly-wrapper {
              position: relative;
@@ -42,7 +42,7 @@
         <script src="//npmcdn.com/mapillary-js@1.0.1/dist/mapillary-js.min.js"></script>
         <script src="//spatialserver.github.io/Leaflet.MapboxVectorTile/dist/Leaflet.MapboxVectorTile.js"></script>
         <script>
-         var map = L.map('map').setView([-73.737, 41.277], 10)
+         var map = L.map('map').setView([37.75, -122.23], 10)
              L.esri.basemapLayer("Topographic").addTo(map)
 
 
@@ -63,8 +63,8 @@
 
              var marker
 
-         var latLon = [-73.737, 41.277]
-         map.setView(latLon, 16)
+         var latLon = [44.33975575, -68.17754611]
+         map.setView(latLon, 14)
              marker = L.marker({
                  lat: latLon[0],
                  lon: latLon[1],
@@ -74,12 +74,12 @@
 
              var mly = new Mapillary
          .Viewer('mly',
-                 'cjJ1SUtVOEMtdy11b21JM0tyYTZIQTo2ZmVjNTQ3YWQ0OWI2Yjgx',  // Replace this with your own ClientID
-                 '6RU1eOMyUy9XDRJ_87esEA')
+                 'MDk2d0tIdFl5ZmVhbWhFQUd5djNLUToyYWJhOTNjNmYwMWI5ZWRi',  // Replace this with your own ClientID
+                 'FAhQzMWOvLPx37kLHKP5gA')
 
              mly.on('nodechanged', function (node) {
                  var latLon = [node.latLon.lat, node.latLon.lon]
-                 map.setView(latLon, 16)
+                 map.setView(latLon, 14)
 
                      if (!marker) {
                          marker = L.marker(node.latLon).addTo(map)
