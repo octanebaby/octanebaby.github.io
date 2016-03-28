@@ -1,0 +1,92 @@
+<html>
+   <head>
+        <meta charset=utf-8 />
+        <title>National Parks</title>
+        <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+        <title>National Parks</title>
+        <link rel="stylesheet" href="https://npmcdn.com/mapillary-js@1.0.1/dist/mapillary-js.min.css">
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v1.0.0-beta.2/leaflet.css" />
+        <style>
+         body {
+             width: 100%;
+             height: 100%;
+         }
+         .mly-wrapper {
+             position: relative;
+             background-color: grey;
+             width: 100%;
+             height: 100%;
+         }
+         .mapillary-js {
+             position: relative;
+             height: 100%;
+             width: 66%;
+         }
+         #map {
+             position: absolute;
+             width: 34%;
+             top: 0;
+             right: 0;
+             bottom: 0;
+             z-index: 100;
+         }
+        </style>
+    </head>
+    <body>
+        <div class="mly-wrapper">
+            <div id="mly"></div>
+            <div id="map"></div>
+        </div>
+        <script src="//cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+        <script src="//cdn.jsdelivr.net/leaflet.esri/1.0.0/esri-leaflet.js"></script>
+        <script src="//npmcdn.com/mapillary-js@1.0.1/dist/mapillary-js.min.js"></script>
+        <script src="//spatialserver.github.io/Leaflet.MapboxVectorTile/dist/Leaflet.MapboxVectorTile.js"></script>
+        <script>
+         var map = L.map('map').setView([37.75, -122.23], 10)
+             L.esri.basemapLayer("Topographic").addTo(map)
+
+
+             var mlyVectorLayerConfig = {
+                 url: 'https://d2munx5tg0hw47.cloudfront.net/tiles/{z}/{x}/{y}.mapbox',
+                 maxZoom: 18,
+                 style: function (feature) {
+                     var style = {}
+                     style.color = 'rgba(0, 255, 0, 0.7)'
+                     style.size = 3
+
+                     return style
+                 }
+             }
+
+         var mvtSource = new L.TileLayer.MVTSource(mlyVectorLayerConfig)
+             map.addLayer(mvtSource)
+
+             var marker
+
+         var latLon = [33.989315, -116.153293,]
+         map.setView(latLon, 14)
+             marker = L.marker({
+                 lat: latLon[0],
+                 lon: latLon[1],
+                 zIndex: 1000
+             })
+             marker.addTo(map)
+
+             var mly = new Mapillary
+         .Viewer('mly',
+                 'MDk2d0tIdFl5ZmVhbWhFQUd5djNLUToyYWJhOTNjNmYwMWI5ZWRi',  // Replace this with your own ClientID
+                 'Un5wo0zWYadsefJCnhv9ZQ')
+
+             mly.on('nodechanged', function (node) {
+                 var latLon = [node.latLon.lat, node.latLon.lon]
+                 map.setView(latLon, 14)
+
+                     if (!marker) {
+                         marker = L.marker(node.latLon).addTo(map)
+                     } else {
+                         marker.setLatLng(node.latLon)
+                     }
+             })
+        </script>
+    </body>
+</html>
