@@ -58,9 +58,9 @@
 				// Otherwise the upper visible point layer is used (excluding map notes)
 				sourceLayerTitle: "",
 				// Use the first data record as an introduction instead of a point (can be overridden through URL)
-				firstRecordAsIntro: true,
+				firstRecordAsIntro: false,
 				// Optional zoom level to be applied for the story points following introduction (can be overridden through URL) (e.g: 0 to 16 for Gray Canvas, 0 to 19 for Street Map, -1 to disable)
-				zoomLevel: -1
+				zoomLevel: 2
 			};
 			// Optionally sharing and proxy URLs can be configured in app/maptour-config.js. This is only required  
 			//  when the webmap is not hosted on ArcGIS Online or a Portal for ArcGIS instance and the template isn't deployed as /home/MapTour/ or /apps/MapTour/. 
@@ -181,82 +181,145 @@
 			<link rel="stylesheet" href="resources/font/sharing/storymaps-icons-ie7.css">
 		<![endif]-->
 	</head>
-<body class="claro" style="font-family: Helvetica">
-	<style>
-		/* CUSTOM CSS RULES */
-	</style>
-	<div id="contentPanel" class="mobileView">
-		<!-- Map panel -->
-		<div id="mapPanel">
-			<div id="mainMap">
-				<div id="hoverInfo"></div>
-			</div>
-			<!-- Builder switch basemap -->
-			<div id="basemapChooser">
-				<div data-dojo-type="dijit/TitlePane" 
-					 data-dojo-props="closable:false, open:false">
-				<div data-dojo-type="dijit/layout/ContentPane" style="width:380px; height:280px; overflow:auto;">
-					<div id="basemapGallery" ></div></div>
+	<body class="claro" style="font-family:Arial">
+		<style>
+			/* CUSTOM CSS RULES */
+		</style>
+		<div id="header">
+			<!-- Mobile header -->
+			<div id="headerMobile" class="firstDisplay">
+				<div class="banner">
+					<h1 class="title"></h1>
+					<h2 class="subtitle"></h2>
+					<p id="closeHeaderMobile"></p>
 				</div>
+				<h3 class="navBar">
+					<span id="listViewLink" data-viewid="list" class="leftLink"></span>
+					<span id="mapViewLink"  data-viewid="map" class="current"></span>
+					<span id="infoViewLink" data-viewid="info" class="rightLink"></span>
+				</h3>
 			</div>
-			<div class="mapLocationError">
-				<div class="mapLocationMsg"></div>
-			</div>
-			<div id="autoplay" class="autoplay">
-				<div class="autoplay-container">
-					<div class="backdrop"></div>
-					<div class="btn-play-container status-pause">
-						<span class="btn-play autoplay-icon-play"></span>
+			<div id="openHeaderMobile"></div>
+			<!-- Desktop header -->
+			<div id="headerDesktop">
+				<div class="rightArea">
+					<div class="social">
+						<span class="msLink">
+							<a href="http://storymaps.arcgis.com" target="_blank" tabindex="-1"></a>
+						</span>
+						<i class="shareIcon share_facebook icon-facebook-squared"></i>
+						<i class="icon-twitter shareIcon share_twitter"></i>
+						<i class="icon-link shareIcon share_bitly"></i>
 					</div>
-					<div class="slider-container ">
-						<input type="text" class="span2" value="" />
+					<div class="logo">
+						<a target="_blank">
+							<img alt="Map Tour logo" class="headerLogoImg"/>
+						</a>
+					</div>
+				</div>
+				<div class="textArea">
+					<h1 class="title" tabindex="0"></h1>
+					<h2 class="subtitle" tabindex="0"></h2>
+				</div>
+				<button type="button" class="switchBuilder btn" tabindex="-1"></button>
+				<!-- Builder top panel -->
+				<div id="builderPanel">
+					<h4></h4>
+					<div>
+						<button type="button" class="btn builder-cmd builder-save"></button>
+						<button type="button" class="btn builder-cmd builder-share"></button>
+						<button type="button" class="btn builder-cmd builder-settings"></button>
+						<button type="button" class="btn builder-cmd builder-help"></button>
+					</div>
+					<div id="status-bar">
+						<span id="save-counter"></span>
+						<span id="sharing-status"></span>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!-- Picture panel -->
-		<div id="picturePanel">
-			<img id="arrowPrev" class="arrow disabled" alt="Previous point"/>
-			<div id="cfader"></div>
-			<div id="pictureLoadingIndicator" style="visibility:hidden;"></div>
-			<img id="arrowNext" class="arrow disabled" alt="Next point"/>
-			
-			<a class="modern-layout-control left click-btn"></a>
-			<a class="modern-layout-control right click-btn"></a>
-			
-			<!-- Builder picture panel buttons -->
-			<div class="editPictureButtons">
-				<div>
-					<span class="attributesWay">
-						<form>
-							<button class="btn btn-picture" type="button" class="btn"></button>
-							<button class="btn btn-thumbnail" type="button" class="btn"></button>
-						</form>
-					</span>
-					<span class="modernBrowserWay">
-						<form>
-							<input class="btn-picture" type="file" accept="image/jpeg" />
-							<input class="btn-thumbnail" type="file" accept="image/jpeg" />
-						</form>
-					</span>
-					<span class="oldBrowserWay">
-						<form id="ppOldBrowserWayPicForm">
-							<input class="btn-picture" type="file" accept="image/jpeg" name="attachment" />
-						</form>
-						<form id="ppOldBrowserWayThumbForm">
-							<input class="btn-thumbnail" type="file" accept="image/jpeg" name="attachment" />
-						</form>
-						<button type="button" class="btn-upload btn" disabled="true"></button>
-					</span>
+		<div id="contentPanel" class="mobileView">
+			<!-- Map panel -->
+			<div id="mapPanel">
+				<div id="mainMap">
+					<div id="hoverInfo"></div>
+				</div>
+				<!-- Builder switch basemap -->
+				<div id="basemapChooser">
+					<div data-dojo-type="dijit/TitlePane" 
+						 data-dojo-props="closable:false, open:false">
+					<div data-dojo-type="dijit/layout/ContentPane" style="width:380px; height:280px; overflow:auto;">
+						<div id="basemapGallery" ></div></div>
+					</div>
+				</div>
+				<div class="mapLocationError">
+					<div class="mapLocationMsg"></div>
+				</div>
+				<div id="autoplay" class="autoplay">
+					<div class="autoplay-container">
+						<div class="backdrop"></div>
+						<div class="btn-play-container status-pause">
+							<span class="btn-play autoplay-icon-play"></span>
+						</div>
+						<div class="slider-container ">
+							<input type="text" class="span2" value="" />
+						</div>
+					</div>
 				</div>
 			</div>
+			<!-- Picture panel -->
+			<div id="picturePanel">
+				<img id="arrowPrev" class="arrow disabled" alt="Previous point"/>
+				<div id="cfader"></div>
+				<div id="pictureLoadingIndicator" style="visibility:hidden;"></div>
+				<img id="arrowNext" class="arrow disabled" alt="Next point"/>
+				
+				<a class="modern-layout-control left click-btn"></a>
+				<a class="modern-layout-control right click-btn"></a>
+				
+				<!-- Builder picture panel buttons -->
+				<div class="editPictureButtons">
+					<div>
+						<span class="attributesWay">
+							<form>
+								<button class="btn btn-picture" type="button" class="btn"></button>
+								<button class="btn btn-thumbnail" type="button" class="btn"></button>
+							</form>
+						</span>
+						<span class="modernBrowserWay">
+							<form>
+								<input class="btn-picture" type="file" accept="image/jpeg" />
+								<input class="btn-thumbnail" type="file" accept="image/jpeg" />
+							</form>
+						</span>
+						<span class="oldBrowserWay">
+							<form id="ppOldBrowserWayPicForm">
+								<input class="btn-picture" type="file" accept="image/jpeg" name="attachment" />
+							</form>
+							<form id="ppOldBrowserWayThumbForm">
+								<input class="btn-thumbnail" type="file" accept="image/jpeg" name="attachment" />
+							</form>
+							<button type="button" class="btn-upload btn" disabled="true"></button>
+						</span>
+					</div>
+				</div>
+			</div>
+		
+			<!-- Builder bottom panel -->
+			<div id="builderPanel3">
+				<button id="introRecordButton" type="button" class="btn"></button>
+			</div>
+			<!-- Builder bottom panel -->
+			<div id="builderPanel2">
+				<button id="addPopupButton" type="button" class="btn"></button>
+				<button id="organizeSlidesButton" type="button" class="btn"></button>
+				<button id="importPopupButton" type="button" class="btn"></button>
+			</div>
 		</div>
-	
-	</div>
 
-	<!-- Mobile views -->
-<div id="listPanel" class="mobileView">
-		<div class="listWrapper">
+		<!-- Mobile views -->
+		<div id="listPanel" class="mobileView">
+			<div class="listWrapper">
 				<div class="listScroller" id="listPanelScroller"></div>
 			</div>
 		</div>
@@ -303,7 +366,7 @@
 				</div>
 			</div>
 		</div>
-S
+
 		<!-- Loading indicator -->
 		<div id="loadingOverlay"></div>
 		<div id="loadingIndicator" class="loadingIndicator">
