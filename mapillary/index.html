@@ -1,0 +1,53 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <script src="https://npmcdn.com/mapillary-js@1.1.0/dist/mapillary-js.min.js"></script>
+  <link rel="stylesheet" href="https://npmcdn.com/mapillary-js@1.1.0/dist/mapillary-js.min.css"/>
+  <style>
+  body { background-color: silver; }
+  .mly-wrapper { margin: 0 auto; }
+  
+  .mly-wrapper {
+    position: relative;
+    background-color: grey;
+    width: 640px;
+    height: 480px;
+  }
+  #mly, .mapillary-js {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+</style>
+</head>
+<body>
+<div class="mly-wrapper"><div class="mly" id="viewer"></div></div>
+<script>
+document.addEventListener("DOMContentLoaded", function(event) {
+    var viewer = new Mapillary.Viewer(
+            "viewer",
+            "MkJKbDA0bnZuZlcxeTJHTmFqN3g1dzo5NWEzOTg3OWUxZDI3MjM4",
+            "gkrX6qDLtHFhIYo1G3RVog",
+            {
+                "cover": false,
+                "imageplane": false,
+                "direction": false,
+                "sequence": false,
+                "mouse": false,
+                "keyboard": false,
+                "slider": {
+                    keys: {
+                        background: "vFLUE_Jf5X-a2u6NtRIsGQ",
+                        foreground: "gkrX6qDLtHFhIYo1G3RVog", // Same as initial key above
+                    },
+                    initialPosition: 1.0,
+                }
+            });
+})
+</script>
+</body>
+</html>
+
+

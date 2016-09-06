@@ -1,0 +1,30 @@
+---
+layout: post
+title: APIs And A Not Audacious Proposal
+category: blog
+---
+Last week I gave a talk at [TigerLabs](http://www.tigerlabs.co/) on what I’ve learned about business development and APIs.  Most of the attendees were using more than one API as integral components of their apps.   A handful were contemplating opening up their own.  In response to my asking what people thought an open API was *for*, some one said something to the effect of: “It’s a lazy way to do more business”.  
+
+We-ellll…..sort of, if by *lazy*, one really means *[self-service](https://twitter.com/paulg/status/171840230373081088)* (here is [great writing](http://shaivalshah.com/cannabilize-business-development-by-populariz) on the subject).  It’s lots of work get to the point where an API is really self-service (see John Sheehan’s excellent [API Developer Experience Baseline](http://john-sheehan.com/post/21850777760/the-api-developer-experience-baseline)) and it isn’t for everyone. But it’s much more fun working with developers than with lawyers.
+
+What takes away from the fun is the business of the thing. Everyone at the talk had heard about the recent shenanigans with [Twitter](http://techcrunch.com/2011/03/12/from-businesses-to-tools-the-twitter-api-tos-changes/) and [LinkedIn](http://www.cbsnews.com/8301-501465_162-57464956-501465/twitter-cuts-off-service-to-linkedin-api-changes-draw-ire/).  Some one had been using the Google Maps API until [Google announced it would charge for it](http://searchenginewatch.com/article/2122151/Google-Maps-API-to-Charge-for-High-Volume-Usage).  
+
+Customers have always asked me: “why should I build my business on your API?” - but the noise around this sentiment in the [hackernewsphere](hackernewsphere) seems to have grown louder in just the past month.  I think it’s going to get louder.  
+
+![sammy]({{ site.url }}/assets/sammy.png)
+
+Unlike the eloquent Dalton Caldwell, I don’t have an [audacious proposal](http://daltoncaldwell.com/an-audacious-proposal/) here.   I’m not optimistic about changing paradigms when it comes to people paying money out of their own pockets, especially when said people are developers who in my experience have mostly been either really really anal about what value they are getting for their dime or really really gobstruck over how pretty whatever the thing is.  But Dalton Caldwell has spent a million X more time with developers than I have, and I hope for his success.   I too, am tired of “hand-wavy platitudes about advertising”.
+
+What nags me is that I don’t think freeing ourselves of the shackles of advertising addresses the fundamental problem of depending on some one else’s API.  **When you build on some one else’s API, you are always going to be their bitch.**  Yes, paying for it will give you more clout.  But as your friendly API provider grows, there will often be some one else, or some other customer segment, or some other “strategic direction” with more money at stake.   Advertising is only one nemesis.  Sometimes it’s a badly managed product.  Sometimes it’s an executive on a whim. 
+
+When I worked at Google there was a period when I was nicknamed “Terminator”, not because I was being badass, but because a breaking change in our API had me delivering the bad news to partners.  (For context, the API was not free and these customers were delivering lots of revenue to Google.  We broke them anyway.) “I’m sorry you spent 8 weeks building this”.  ”I’m sorry you quit your day job to build this”. “I’m sorry you mortgaged your house on this business”. 
+
+My anger about this has faded now and I no longer rant about how Google Is Evil.  It’s just business, isn’t it?  Businesses - software companies, auto dealers, sandwich shops - have been chugging along depending on other businesses for a long time and this is hardly a new problem.   But with open “self-service” API’s, the pain of of this old problem can be more acute and far-reaching.   Developers I’ve worked with understand that nothing lasts long in InternetLand - no such thing as a free lunch, shit happens, etc.  What no one enjoys is having shit happen via sudden changes in the Terms of Service (or its passive-aggressive relative: sudden active enforcement of small print in the Terms of Service that no one’s ever mentioned before) .
+
+My not-audacious proposal to get all of us through this together is to **talk to each other**.  If you just rolled your eyes, well, (a) see, I said it was not-audacious, and (b) succeeding at making an API self-service means conversations get fewer and further between.  Talking to customers about tough decisions, upcoming changes, and the uncertainty of the future is not easy one-on-one, much less to an audience of thousands - especially when the temptation is to paint a picture of idyllic stability so they will buy.  
+
+**Resist**.  I believe that if the API is awesome and drives value, smart developers will do the risk-benefit analysis and make the right decision.  No one expects the open kimono on company strategy, but little stuff might help everyone sleep better at night:  Set the right expectations.  Don’t make guarantees you can’t keep.  Communicate decisions as soon as they are made.  Give lots of notice around changes.  Discuss uncertainties with the most engaged customers and get feedback, if circumstances allow.  Don’t stonewall developers who care enough to ask: “Why should I build my business on your API?”.   (Developers! please ask.)
+
+Here’s something more concrete from one of my favorite companies: [Pusher](http://pusher.com/).  Pusher’s API for realtime messaging was free in beta.  During this time they not only made clear their intention to charge for it, but published a future pricing schedule for everyone to see.  The schedule was up there for months before they actually started charging.  I think it’s a terrific example of expectation setting, plenty of notice and feedback gathering.
+
+I can do a lot better at this myself. I think the key is holding on to the fundamentals of old-school bizdev while embracing new ways.  APIs may be self-service but relationships and trust are not. 

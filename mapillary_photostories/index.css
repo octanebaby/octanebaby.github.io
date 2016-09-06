@@ -1,0 +1,319 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 200px;
+}
+
+#fullscreenView {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.mly-wrapper-full {
+    position: relative;
+    background-color: grey;
+    width: 100%;
+    height: 100%;
+}
+
+.mapillary-js {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+#map-full {
+    position: absolute;
+    width: 34%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+}
+
+.glyphicon:hover {
+    color: #36AF6D;
+}
+
+#story .mapillary-js {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+body .background {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 80px;
+}
+
+h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+}
+
+h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+}
+
+#title {
+    font-family: 'avenir', sans-serif;
+    font-weight: 600;
+    font-size: 80px;
+}
+
+#subtitle {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    z-index: 124;
+}
+
+#clear-map {
+    width: 100%;
+    height:30%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+}
+
+#expand-map {
+    width: 100%;
+    height:5%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+}
+
+#right-map {
+    width: 100%;
+    height:100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+}
+
+.glyphicon.glyphicon-resize-full {
+    position: absolute;
+    color: white;
+    font-size: 3em;
+    top: 5%;
+    right: 2%;
+    z-index: 1200;
+    -webkit-text-stroke: 1px black;
+}
+
+.glyphicon.glyphicon-resize-full:hover {
+    color: #36AF6D;
+}
+
+.glyphicon.glyphicon-arrow-left {
+    font-size: 3em;
+    top: 1px;
+}
+
+.glyphicon.glyphicon-play {
+    position: absolute;
+    padding: 20px;
+    font-size: 6em;
+    background-color: rgba(215, 218, 221, .5);
+    border-radius: 50%;
+    margin: 0 auto;
+    z-index: 1000;
+    top: 40%;
+    left: 43%;
+}
+.glyphicon.glyphicon-menu-down {
+    font-size: 3em;
+    top: 1px;
+    padding: 5px;
+    padding-left: 10px;
+
+}
+
+.glyphicon.glyphicon-menu-up {
+    font-size: 3em;
+    top: 1px;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+#map-mode {
+    position: relative;
+    right: 5%;
+    width: 90%;
+    height: 500px;
+    z-index: 1000;
+    background-color: white;
+    border: 5px solid rgb(255, 255, 255);
+    box-shadow: 3px 3px 3px #888888;
+}
+
+#story-description {
+    position: relative;
+    width: 80%;
+    left: 10%;
+    text-align: center;
+}
+
+#fullscreen-title {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.fullscreen-body {
+    position: relative;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.description-text {
+    position: relative;
+    margin: 0 auto;
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 75%;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+#description {
+    display: block;
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 10%;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    filter: opacity(60%);
+}
+
+#authorDate {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
+    margin: 0 auto;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+    padding: 5%;
+}
+
+#author {
+    position: relative;
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
+    margin: 0 auto;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+}
+#date {
+    position: relative;
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
+    margin: 0 auto;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+}
+
+#center-panel {
+    width: 100%;
+    height: 25%;
+    z-index: 6000;
+}
+
+#mly {
+    position: absolute;
+    margin: auto;
+    bottom: 0%;
+    height: 100%;
+    width: 100%;
+    z-index: 51;
+}
+
+#back {
+    font-family: Helvetica Neue, Helvetica;
+    height: 4%;
+    display: inline-block;
+}
+
+#img-description {
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+    font-size: 1.5em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color: white;
+    z-index: 99;
+}
+
+#fullscreen-description {
+    position: relative;
+    width: 80%;
+    left: 10%;
+    text-align: center;
+}
+
+#clear-map {
+    clear: both;
+}
+
+#introduction {
+    position: relative;
+    margin: 0 auto;
+    width: 60%;
+    text-align: left;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+#fullscreen-view {
+    padding-bottom: 10%;
+}
+
+.fullscreen-item {
+    width:100%;
+    height: 100%;
+}

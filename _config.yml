@@ -1,0 +1,10 @@
+markdown: rdiscount
+pygments: true
+rdiscount:
+  extensions: [smart]
+
+name: Hello!
+url: http://janineyoong.com
+description: Happy!
+twitter: janineyoong
+github: octanebaby
